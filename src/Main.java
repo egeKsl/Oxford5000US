@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main
 {
@@ -6,7 +7,20 @@ public class Main
     private static ArrayList list = worker.add5000();
 
     public static void main(String[] args) {
-        workerMethod();
+        System.out.println("**************** Welcome to you ********************");
+        System.out.println("**************** Press 1 for start ********************");
+        Scanner scanner = new Scanner(System.in);
+
+        int deger = scanner.nextInt();
+
+        switch (deger)
+        {
+            case 1 : {workerMethod();
+                System.out.println("\nGOD LUCK :)");
+            break;}
+            default:
+                System.out.println("**************** ERROR ********************\n"+"**************** Press 1 please ********************");
+        }
     }
 
     public static void workerMethod()
